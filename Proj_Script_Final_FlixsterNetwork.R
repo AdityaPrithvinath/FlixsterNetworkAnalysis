@@ -51,7 +51,7 @@ flixster_walk <- walktrap.community(g_overall_simple)
 c.w <- membership(flixster_walk)
 table(c.w, useNA = c("no"))
 
-# Here, we are testing community significance for just two of the communities. Students will complete tests for the remainder of communities for each algorithm. 
+# Here, we are testing community significance for just two of the communities. 
 v_comp1 <- V(g_overall_simple)[c.w==1]
 v_comp2 <- V(g_overall_simple)[c.w==2]
 v_comp3 <- V(g_overall_simple)[c.w==3]
@@ -141,7 +141,7 @@ simulate_sir <- function(network.i, simlength=15, p.t=0.2, display_net=TRUE, rem
   high_eigen<-order(-egen_Cen$vector)[1]
   patientzero <- high_eigen # select 'patient zero'
   
-  # Initialize a vector that keeps track of the time of infection for each node. For advanced lab, you will need to use this appropriately
+  # Initialize a vector that keeps track of the time of infection for each node.
   infected_time<-rep(0, N)
 
   
